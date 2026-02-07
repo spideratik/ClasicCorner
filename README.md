@@ -30,3 +30,6 @@ A modern, high-performance dynamic e-commerce platform designed for women and gi
    ```bash
    git clone [https://github.com/YOUR_USERNAME/classic-corner.git](https://github.com/YOUR_USERNAME/classic-corner.git)
    cd classic-corner
+
+
+   npm install
