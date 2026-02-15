@@ -1,7 +1,11 @@
 import type { Config } from "tailwindcss";
 
 const config: Config = {
-  content: ["./src/**/*.{js,ts,jsx,tsx,mdx}"],
+  content: [
+    "./src/**/*.{js,ts,jsx,tsx,mdx}", // This covers app, components, and pages
+    "./app/**/*.{js,ts,jsx,tsx,mdx}",
+    "./components/**/*.{js,ts,jsx,tsx,mdx}",
+  ],
   theme: {
     extend: {
       colors: {
@@ -9,6 +13,7 @@ const config: Config = {
         'brand-sage': '#9CAF88',
         'brand-terracotta': '#D4A373',
         'brand-walnut': '#3E2F28',
+        'brand-blue': '#E0F2FE',
       },
       fontFamily: {
         serif: ['var(--font-cormorant)'],
@@ -18,4 +23,5 @@ const config: Config = {
   },
   plugins: [],
 };
+
 export default config;

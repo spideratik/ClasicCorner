@@ -1,3 +1,29 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+  body {
+    /* Set the default background and text color for the whole site */
+    @apply bg-[#E0F2FE] text-[#3E2F28] antialiased;
+    height: auto;
+    @layer components {
+        .hero-background {
+          /* This controls the vertical height of your blue section */
+          padding-top: 2rem;    /* Equivalent to pt-8 */
+          padding-bottom: 2rem; /* Equivalent to pb-8 */
+          width: 10%;
+          background-color: #3b82f6;
+        }
+      }
+
+    /* Optional: Ensure no horizontal scroll issues */
+    overflow-x: hidden;
+
+  }
+}
+
+/* Custom utility for your classic border color if you use it often */
+.border-classic-light {
+  border-color: #e0f7fa;
+}
